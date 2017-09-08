@@ -4,3 +4,4 @@
 * [Music Wheel](Music-Wheel.html)
 * [Architecture](Architecture.html)
 * [Guidelines](Guidelines.html)
+{: .nav .navbar-nav}

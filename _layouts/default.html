@@ -1,24 +1,46 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>{{title}}</title>
+  <title>Etterna Wiki</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://nickito12.github.io/etterna/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://etternagame.github.io/wiki/css/style.css">
 </head>
 <body>
 
-<div class="container">
-	<div class="Sidebar" markdown="1">
-		{% capture sidebar %}{% include_relative _Sidebar.md %}{% endcapture %}
-		{{ sidebar | markdownify }}
-		
+	<div class="container">
+		<div class="row">
+			<div class="col-12 title" markdown="1">
+					<h1 class="offset-1"><a href="https://etternagame.github.io/wiki/">Etterna Wiki</a></h1>
+					
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 col-md-2 sidebar" markdown="1">
+				<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+					<div class="container-fluid">
+						<div class="navbar-header" style="padding-left: 10px">
+						  <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="border:1px solid teal;">
+							<span class="icon-bar" style="border:1px solid teal;"></span>
+							<span class="icon-bar" style="border:1px solid teal;"></span>
+							<span class="icon-bar" style="border:1px solid teal;"></span>                        
+						  </button>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							{% capture sidebar %}{% include_relative _Sidebar.md %}{% endcapture %}
+							{{ sidebar | markdownify }}
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="col-sm-12 col-md-10 col-xs-12 pt-3" markdown="1">
+				{{ content }}
+			</div>
+		</div>
 	</div>
-
-	<div class="Content" markdown="1">
-		{{ content }}
-	</div>
-</div>
 
 </body>
 </html> 

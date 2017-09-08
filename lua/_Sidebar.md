@@ -4,3 +4,4 @@
 * [Screens](Screens.html)
 * [Theming Basics](Theming-Basics.html)
 * [FAQ](FAQ.html)
+{: .nav .navbar-nav}

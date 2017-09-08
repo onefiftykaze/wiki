@@ -7,3 +7,4 @@
 * [Wife](Wife.html)
 * [Theming](Theming.html)
 * [Chord Cohesion](Chord-Cohesion.html)
+{: .nav .navbar-nav}
