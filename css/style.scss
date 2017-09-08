@@ -1,7 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme }}";
 
 .Container {
 height:100px;
@@ -18,4 +17,24 @@ height: 100%;
 margin-left:25%;
 width:75%;
 float:right;
+}
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+   .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .navbar-collapse ul {
+    float: none;
+    display: block;
+  }
+  .navbar-collapse li {
+    float: none;
+    display: block;
+  }
+  .navbar-collapse li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }

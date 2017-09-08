@@ -1,6 +1,7 @@
 * [Lua Wiki](lua/index.html)
 * [C++ Wiki](cpp/index.html)
 * [FAQ](FAQ.html)
+* [Features](Features.html)
 * [Building Etterna](Building-Etterna.html)
 * [Playlists](Playlists.html)
 * ['Til Death]('Til-Death.html)

@@ -1,7 +1,6 @@
 
 ![](Install.ico)
-1. <a href="#what">What Is Etterna?</a>
-1. <a href="features">Features</a>
+
 <a name="what" />
 
 ## What Is Etterna?
