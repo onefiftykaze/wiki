@@ -13,7 +13,7 @@ If you want to contribute, the best way is to make a fork of this repo, download
 
 I recommend you get <a href="https://git-scm.com/">Git</a> if you dont already have it and make a <a href="https://github.com/join">GitHub Account</a>.
 
-Once you have those, open a commandline or terminal on the folder you want simply clone from your fork by running "git clone https://github.com/yourusername/wiki.git"(Replace your username)
+Once you have those, open a commandline or terminal on the folder you want simply clone from your fork by running "git clone https://github.com/yourusername/wiki.git" (Replace your username)
  https://github.com/etternagame/wiki.git
  
 Then make your changes and run "git push gh-pages" (Or "git push https://github.com/yourusername/wiki.git gh-pages")
