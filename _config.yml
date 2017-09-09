@@ -19,5 +19,6 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-    url: "https://etternagame.github.io"
-    baseurl: "/wiki"
+url: "https://etternagame.github.io"
+baseurl: "/wiki"
+markdown: kramdown
