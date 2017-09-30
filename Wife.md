@@ -74,27 +74,6 @@ However replacing the .sm file for Quasar with an .sm file for Ageha will produc
 
 The idea this feature is: if it plays the same, it is the same. The goal was to produce something robust enough to catch any "real" (i.e. affecting gameplay on a practical level) changes in a chart but flexible enough to ignore anything else.
 
-## Playing with other Judge difficulties
-
-Another major distinction between Wife and the scoring system in vanilla Stepmania is that Wife records your millisecond deviance record for anything you play along with your judgments and any other standard data output.
-
-Despite MSS being designed for Judge 5, you can still use it while playing on Judge 4, though it will weigh anything in the 151-180 ms range as a Miss (basically the majority of the Boo window). This isn't particularly desirable for players not used to playing on Judge 5 and switching to MSS might be too daunting or even just frustrating. To mitigate this, the entire score calculation system has been rewritten to calculate based on standardized input designed to accommodate millisecond based scoring. This means that any number of scoring systems are supported whether they emulate MSS or DP in methods of calculation ad infinitum. This means it's easy to support a Judge 4 targeted variant of MSS that looks something like this:
-
-* CurveBegin = 40 ms
-* CurveEnd = 180 ms
-* linFac = 9.5
-* expFac = 2
-* MaxPoints = 2
-* MaxPenalty = -7.5
-
-In Etterna, this scoring type is called **Waifu**, a derivative of Wife.
-
-Having to deal with multiple scoring types is not a problem, since the original millisecond deviance record is being stored and the score calculation is standardized. Wife will calculate and store percent values for each type at the evaluation screen. It will then only display the value for whichever scoring type you have currently selected (along with indicating what that type is). Switching from Waifu to Wife will simply change which value is displayed. So will switching to and from any combination of DP/MIGS/Wife and so on and so forth.
-
-The Judge value under which scores were achieved on are saved as well as the parameters. Wife will check for changes in either; changing from Judge 4 to Judge 5 will recalculate DP/MIGS/Waifu. Changing the parameters for any of the millisecond based systems will also invoke a recalculation using the new parameters.
-
-This only applies to scores attained after Wife is operating. Pre-existing scores in the game's high score table are converted into Wife's format. The percent values for each scoring type are calculated with the assumption that they are achieved on Judge 4, millisecond based scoring systems will be ignored, and nothing will be calculated. 
-
 ### Other Links 
 
 [Spreadsheet showing the difference between Wife and DP.](https://docs.google.com/spreadsheets/d/15efgvF256nn1Z91djn-2e77kgMAq9sQy1DWfOA1DuKw/edit#gid=1537673854)
